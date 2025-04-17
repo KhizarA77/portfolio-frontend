@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
     <footer className="bg-gray-900 text-white py-6">
       <div className="container text-center">
         <p className="flex items-center justify-center">
-          &copy; {currentYear} Khizar Asad. Made with <FaHeart className="text-red-500 mx-1" /> using React
+          &copy; {currentYear} Khizar Asad. All rights reserved.
         </p>
       </div>
     </footer>
