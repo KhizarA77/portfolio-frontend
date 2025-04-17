@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #0070f3;
+  --secondary-color: #6c757d;
+  --dark-color: #0a0a0a;
+  --light-color: #f8f9fa;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-gray-800 font-sans transition-colors duration-300;
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+
+  .dark body {
+    @apply bg-gray-900 text-white;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section {
+    @apply py-16 md:py-24;
+  }
+
+  .btn {
+    @apply inline-block px-6 py-3 rounded-lg font-medium transition-all duration-300;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-blue-600;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300 
+    dark:bg-gray-800 dark:text-white;
+  }
+
+  .skill-slider {
+    @apply overflow-hidden relative py-8;
+  }
+
+  .skill-item {
+    @apply flex flex-col items-center justify-center w-24 h-24 mx-4 rounded-lg bg-white dark:bg-gray-800 shadow-md transition-all duration-300 p-4;
+  }
+}
+
+@layer utilities {
+  /* Dark mode specific styles */
+  .dark .bg-light {
+    @apply bg-gray-800;
+  }
+
+  .dark .bg-gray-50 {
+    @apply bg-gray-900;
+  }
+
+  .dark .text-gray-700 {
+    @apply text-gray-300;
+  }
+
+  .dark .card {
+    @apply bg-gray-800 border border-gray-700;
+  }
+}
+
+/* Custom styles that don't use @apply */
+.skill-track {
+  display: flex;
+  gap: 2rem;
+  animation: scroll 30s linear infinite;
+}
+
+.skill-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
