@@ -10,7 +10,7 @@ interface ProjectCardProps {
   image?: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, technologies, link, image }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, technologies, link }) => {
   return (
     <motion.div
       whileHover={{ y: -5 }}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaLinkedin, FaGithub, FaEnvelope, FaArrowDown } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaArrowDown } from 'react-icons/fa';
 
 const Hero: React.FC = () => {
   return (
