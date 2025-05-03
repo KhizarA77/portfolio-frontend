@@ -6,7 +6,7 @@ import { ProjectType } from '../types';
 const Projects: React.FC = () => {
   const projects: ProjectType[] = [
     {
-      title: "RecruitWise",
+      title: "Recruit Wise",
       description: "An intelligent recruitment platform with infrastructure built on NestJS. Currently responsible for deployment, scalability, and infrastructure management.",
       technologies: ["NestJS", "TypeScript", "Cloud", "Infrastructure"],
       link: "https://recruitwise-frontend.vercel.app/"
