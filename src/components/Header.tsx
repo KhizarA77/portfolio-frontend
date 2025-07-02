@@ -13,9 +13,9 @@ const Header: React.FC = () => {
   return (
     <header className="sticky top-0 z-50 bg-white shadow-sm dark:bg-gray-800 dark:text-white transition-colors duration-300">
       <div className="container py-4 flex justify-between items-center">
-        <Link to="/" className="text-2xl font-bold text-primary">
+        <a href="#" className="text-2xl font-bold text-primary">
           Khizar Asad
-        </Link>
+        </a>
 
         <div className="flex items-center">
           {/* Theme Toggle Button */}
