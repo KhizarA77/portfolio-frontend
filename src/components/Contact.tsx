@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaPaperPlane, FaLinkedin, FaGithub, FaEnvelope, FaPhoneAlt } from 'react-icons/fa';
+import { FaPaperPlane, FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 import { FormData } from '../types';
 
 const Contact: React.FC = () => {
@@ -90,12 +90,6 @@ const Contact: React.FC = () => {
                   </a>
                 </div>
                 
-                <div className="flex items-center space-x-4">
-                  <FaPhoneAlt size={20} />
-                  <a href="tel:+923362403019" className="hover:underline">
-                    +92 336 2403019
-                  </a>
-                </div>
                 
                 <div className="flex items-center space-x-4">
                   <FaLinkedin size={20} />
